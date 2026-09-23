@@ -1,0 +1,103 @@
+/* ==========================================================================
+   1. Base & Reset Styles
+   ========================================================================== */
+
+/* Universal box-sizing reset helps manage layout sizing accurately */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   2. Typography (Headings & Text)
+   ========================================================================== */
+
+h1, h2, h3 {
+    color: #111111;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+/* Link element states */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #004499;
+}
+
+/* ==========================================================================
+   3. Layout Components
+   ========================================================================== */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   4. UI Elements (Buttons)
+   ========================================================================== */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   5. Responsive Media Queries
+   ========================================================================== */
+
+/* Adjusts layout properties for mobile viewports under 768px wide */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
