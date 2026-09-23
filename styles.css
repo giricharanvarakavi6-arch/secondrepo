@@ -87,17 +87,3 @@ a:hover {
     color: #ffffff;
 }
 
-/* ==========================================================================
-   5. Responsive Media Queries
-   ========================================================================== */
-
-/* Adjusts layout properties for mobile viewports under 768px wide */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-}
